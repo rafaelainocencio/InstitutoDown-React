@@ -1,0 +1,10 @@
+.principal{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+
+footer{
+    height: 30px;
+    text-align: center;
+}
