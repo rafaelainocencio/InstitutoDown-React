@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/livros" element={<Ebooks />} />
             <Route path="/vagas" element={<Vagas />} />
-            <Route path='/vagas/candidatar'>
+            <Route path='/vagas/candidatura'>
               <Route path=':id' element={<Candidatar />} />
             </Route>
           </Routes>

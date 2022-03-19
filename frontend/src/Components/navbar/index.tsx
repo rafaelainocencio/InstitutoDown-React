@@ -22,7 +22,7 @@ export default function Navbar(){
                                 Vagas
                             </Link>
 
-                            <Link className="nav-item nav-link" to="/candidatar">
+                            <Link className="nav-item nav-link" to="/candidatatura">
                                 Candidatar
                             </Link>
     

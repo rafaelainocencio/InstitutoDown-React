@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import PaginationVaga from "../../Components/paginationVaga";
+import { CandidaturaPage } from "../../Components/Types/candidaturas";
 
 import { VagaPage } from "../../Components/Types/vagas";
 import VagaCard from "../../Components/VagaCard";
@@ -8,6 +9,8 @@ import { BASE_URL } from "../../Utils/requests";
 
 
 function Vagas() {
+
+    
 
 
     const [pageNumber, setPageNumber] = useState(0);
