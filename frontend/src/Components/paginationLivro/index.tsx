@@ -1,10 +1,11 @@
+import { type } from "os";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi"
 import { LivroPage } from "../Types/livros";
 import { VagaPage } from "../Types/vagas";
 
 
 type Props = {
-    page: LivroPage
+    page: LivroPage,
     onChange: Function;
 }
 

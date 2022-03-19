@@ -3,7 +3,7 @@ import LivroCard from "../../Components/LivroCard";
 import { useEffect, useState } from "react";
 
 import "../../index.css";
-import Pagination from "../../Components/pagination";
+import Pagination from "../../Components/paginationLivro";
 import { LivroPage } from "../../Components/Types/livros";
 import axios from "axios";
 import { BASE_URL } from "../../Utils/requests";
@@ -40,7 +40,7 @@ function Livros() {
 
     return (
         <div >
-            <div className="container desContainer">
+            <div className="container liContainer">
 
                 <div className="container Livro-contanainer row">
                     {page.content.map(Livro => (

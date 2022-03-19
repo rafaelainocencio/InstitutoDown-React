@@ -8,3 +8,9 @@ footer{
     height: 30px;
     text-align: center;
 }
+
+.vaContainer, .liContainer{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}

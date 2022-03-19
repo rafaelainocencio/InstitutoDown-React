@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import Pagination from "../../Components/pagination";
+import PaginationVaga from "../../Components/paginationVaga";
+
 import { VagaPage } from "../../Components/Types/vagas";
 import VagaCard from "../../Components/VagaCard";
 import { BASE_URL } from "../../Utils/requests";
@@ -38,7 +39,7 @@ function Vagas() {
 
     return (
         <div >
-            <div className="container desContainer">
+            <div className="container vaContainer">
 
                 <div className="container Vaga-contanainer row">
                     {page.content.map(Vaga => (
@@ -49,7 +50,7 @@ function Vagas() {
 
             </div>
             <div className="container pagination-container">
-                <Pagination page={page} onChange={handlePageChange} />
+                <PaginationVaga page={page} onChange={handlePageChange} />
             </div>
         </div>
     );
