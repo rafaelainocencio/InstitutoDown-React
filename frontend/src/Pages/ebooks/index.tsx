@@ -48,7 +48,7 @@ function Livros() {
                         <LivroCard key={Livro.id} Livro={Livro} />
                     ))}
                 </div>
-
+                        <h1>E-books</h1>
             </div>
             <div className="container pagination-container">
                 <Pagination page={page} onChange={handlePageChange} />
