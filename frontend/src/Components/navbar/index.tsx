@@ -48,11 +48,19 @@ export default function Navegacao() {
                             </Link>
                         </NavDropdown>
                         <NavDropdown title="Cadastros" id="basic-nav-dropdown">
+<<<<<<< HEAD
                             <Link className="nav-item nav-link" to="/registrar/empresa">
                                 <NavDropdown.Item href="#action/3.1">Cadastre-se como empresa</NavDropdown.Item>
                             </Link>
                             <Link className="nav-item nav-link" to="/registrar/usuario">
                                 <NavDropdown.Item href="#action/3.2">Cadastre-se como usuário</NavDropdown.Item>
+=======
+                            <Link className="nav-item nav-link" to="/cadastroempresa">
+                                <NavDropdown.Item href="#action/3.1">Cadastre-se como empresa</NavDropdown.Item>
+                            </Link>
+                            <Link className="nav-item nav-link" to="/cadastrousuario">
+                                <NavDropdown.Item href="#action/3.2">Cadastre-se como usuario</NavDropdown.Item>
+>>>>>>> eb0db1d51c489a70da2130e22f9404204ac257fe
                             </Link>
                         </NavDropdown>
                     </Nav>
