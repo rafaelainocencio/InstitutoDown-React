@@ -50,6 +50,9 @@ function Vagas() {
                         <VagaCard key={Vaga.id} Vaga={Vaga} />
                     ))}
                 </div>
+                
+            <h1>Vagas</h1>
+        
 
             </div>
             <div className="container pagination-container">

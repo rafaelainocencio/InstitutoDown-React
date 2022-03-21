@@ -41,14 +41,14 @@ function Livros() {
     return (
         <div >
             <div className="container liContainer">
-
+            <h1>E-books</h1>
                 <div className="container Livro-contanainer row">
                     {page.content.map(Livro => (
 
                         <LivroCard key={Livro.id} Livro={Livro} />
                     ))}
                 </div>
-
+                        
             </div>
             <div className="container pagination-container">
                 <Pagination page={page} onChange={handlePageChange} />

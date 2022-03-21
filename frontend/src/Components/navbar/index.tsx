@@ -1,39 +1,63 @@
+import { Navbar, Container, Nav, NavDropdown, } from 'react-bootstrap'
 import { Link } from "react-router-dom";
+import './style.css';
+import logo from '../../assets/instdown_logo.svg';
 
-export default function Navbar(){
-    return(
-        <header>
-            <nav className="container navbar navbar-expand-lg navbar-light ">
+
+export default function Navegacao() {
+    return (
+
+        <Navbar className="navbar" variant="dark" expand="lg">
+            <Container >
                 <Link className="nav-item nav-link" to="/">
-                    Instituto Down
+                    <img src={logo}
+                        width="80"
+                        height="80"
+                        className="d-inline-block align-top"
+                        alt="Instituto Down logo"
+                    />
                 </Link>
-                <div className='opcoes'>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
-
-                            <Link className="nav-item nav-link" to="/livros">
-                                Ebooks
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <NavDropdown title="Sobre nós" id="basic-nav-dropdown">
+                            <Link className="nav-item nav-link" to="/quemsomos">
+                                <NavDropdown.Item href="#action/3.1">Quem somos</NavDropdown.Item>
                             </Link>
-
+                            <Link className="nav-item nav-link" to="/oquefazemos">
+                                <NavDropdown.Item href="#action/3.2">O que fazemos</NavDropdown.Item>
+                            </Link>
+                        </NavDropdown>
+                        <NavDropdown title="Capacitação" id="basic-nav-dropdown">
+                            <Link className="nav-item nav-link" to="/sindromededown">
+                                <NavDropdown.Item href="#action/3.1">Síndrome de Down</NavDropdown.Item>
+                            </Link>
+                            <Link className="nav-item nav-link" to="/capacitacaoprofissional">
+                                <NavDropdown.Item href="#action/3.2">Capacitação Profissional</NavDropdown.Item>
+                            </Link>
+                            <Link className="nav-item nav-link" to="/ebooks">
+                                <NavDropdown.Item href="#action/3.3">E-Books</NavDropdown.Item>
+                            </Link>
+                        </NavDropdown>
+                        <NavDropdown title="Mercado de trabalho" id="basic-nav-dropdown">
+                            <Link className="nav-item nav-link" to="/porquecontratar">
+                                <NavDropdown.Item href="#action/3.1">Por que contratar?</NavDropdown.Item>
+                            </Link>
                             <Link className="nav-item nav-link" to="/vagas">
-                                Vagas
+                                <NavDropdown.Item href="#action/3.2">Vagas de emprego</NavDropdown.Item>
                             </Link>
-
-                            <Link className="nav-item nav-link" to="/candidatatura">
-                                Candidatar
+                        </NavDropdown>
+                        <NavDropdown title="Cadastros" id="basic-nav-dropdown">
+                            <Link className="nav-item nav-link" to="/registrar/empresa">
+                                <NavDropdown.Item href="#action/3.1">Cadastre-se como empresa</NavDropdown.Item>
                             </Link>
-    
-                            {/* <Link className="nav-item nav-link" to="/crud">
-                                CRUD
-                            </Link> */}
-
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+                            <Link className="nav-item nav-link" to="/registrar/usuario">
+                                <NavDropdown.Item href="#action/3.2">Cadastre-se como usuário</NavDropdown.Item>
+                            </Link>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
