@@ -48,12 +48,13 @@ export default function Navegacao() {
                             </Link>
                         </NavDropdown>
                         <NavDropdown title="Cadastros" id="basic-nav-dropdown">
-                            <Link className="nav-item nav-link" to="/cadastroempresa">
+
+                            <Link className="nav-item nav-link" to="/registrar/empresa">
                                 <NavDropdown.Item href="#action/3.1">Cadastre-se como empresa</NavDropdown.Item>
                             </Link>
-                            <Link className="nav-item nav-link" to="/cadastrousuario">
-                                <NavDropdown.Item href="#action/3.2">Cadastre-se como usuario</NavDropdown.Item>
-                            </Link>
+                            <Link className="nav-item nav-link" to="/registrar/usuario">
+                                <NavDropdown.Item href="#action/3.2">Cadastre-se como usuário</NavDropdown.Item>
+                                </Link>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
