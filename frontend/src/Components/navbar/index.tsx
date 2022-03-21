@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav, NavDropdown, } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import './style.css';
-import logo from '../../assets/instdown_logo.svg';
+import logo from '../../assets/instdown4_logo.svg';
 
 
 export default function Navegacao() {
@@ -11,8 +11,8 @@ export default function Navegacao() {
             <Container >
                 <Link className="nav-item nav-link" to="/">
                     <img src={logo}
-                        width="80"
-                        height="80"
+                        width="70"
+                        height="70"
                         className="d-inline-block align-top"
                         alt="Instituto Down logo"
                     />
