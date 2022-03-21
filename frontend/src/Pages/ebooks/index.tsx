@@ -48,11 +48,11 @@ function Livros() {
                         <LivroCard key={Livro.id} Livro={Livro} />
                     ))}
                 </div>
-<<<<<<< HEAD
+
                         
-=======
+
                         <h1>E-books</h1>
->>>>>>> eb0db1d51c489a70da2130e22f9404204ac257fe
+
             </div>
             <div className="container pagination-container">
                 <Pagination page={page} onChange={handlePageChange} />

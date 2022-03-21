@@ -14,12 +14,12 @@ import SindromeDeDown from './Pages/Capacitacao/SindromeDeDown'
 import Capacitacao from './Pages/Capacitacao/CapacitacaoProfissional'
 import PorQueContratar from './Pages/MercadoDeTrabalho/porQueContratar'
 import CadastroEmpresa from './Pages/Cadastros/empresas'
-<<<<<<< HEAD
+
 import RegistrarUsuario from './Pages/RegistrarUsuario';
 import RegistrarEmpresa from './Pages/RegistrarEmpresa';
-=======
+
 import CadastroUsuario from './Pages/Cadastros/usuarios';
->>>>>>> eb0db1d51c489a70da2130e22f9404204ac257fe
+
 
 function App() {
   return (
@@ -34,13 +34,13 @@ function App() {
             <Route path='/sindromededown' element={<SindromeDeDown/>} />
             <Route path='/capacitacaoprofissional' element={<Capacitacao/>} />
             <Route path='/porquecontratar' element={<PorQueContratar/>} />
-<<<<<<< HEAD
+
             <Route path="/registrar/empresa" element={<RegistrarEmpresa />} />
             <Route path="/registrar/usuario" element={<RegistrarUsuario />} />
-=======
+
             <Route path='/cadastroempresa' element={<CadastroEmpresa/>} />
             <Route path='/cadastrousuario' element={<CadastroUsuario/>} />
->>>>>>> eb0db1d51c489a70da2130e22f9404204ac257fe
+            
             <Route path="/ebooks" element={<Ebooks />} />
             <Route path="/vagas" element={<Vagas />} />
             <Route path='/vagas/candidatura'>
