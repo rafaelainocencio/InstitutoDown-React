@@ -1,7 +1,7 @@
-import { type } from "os";
+
 import { Link } from "react-router-dom";
 import { Vaga } from "../../Components/Types/vagas";
-import { Candidatura, CandidaturaPage } from "../Types/candidaturas";
+
 
 type Props = {
     Vaga: Vaga;
