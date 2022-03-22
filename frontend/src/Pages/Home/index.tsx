@@ -1,9 +1,11 @@
-import './style.css';
+import '../Home/style.css';
 
 export default function Home(){
     return(
-        <body>
-            
+        <>
+        <body >
+           <h1 className="titulo">Home</h1>
         </body>
+        </>
     )
 }
