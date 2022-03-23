@@ -44,9 +44,55 @@ import { BASE_URL } from "../../Utils/requests";
         
     
         return (
+            
             <div className="card container mt-5">
                 <div className="card-header">
-                    Registrar Usuário
+                    Registrar Empresa
+                </div>
+                <div className="card-body">
+                     <form className="adicionar-form-container" onSubmit={handleSubmit} >
+                        <div className="form-group institutoDown-form-group">
+                            <label htmlFor="formGroupExampleInput">Nome:</label>
+                            <input className="form-control" id="nome" 
+                  
+                            />
+                        </div>
+                        <div className="form-group institutoDown-form-group">
+                            <label htmlFor="description">Cnpj:</label>
+                            <input  className="form-control" id="cnpj" 
+                          
+                            />
+                        </div>
+                        <div className="form-group institutoDown-form-group">
+                            <label htmlFor="image">Cidade:</label>
+                            <input className="form-control" id="cidade" 
+               
+                            />
+                        </div>
+                        <div className="form-group institutoDown-form-group">
+                            <label htmlFor="image">Estado:</label>
+                            <input className="form-control" id="estado"
+                            />
+                        </div>
+                        <div className="form-group institutoDown-form-group">
+                            <label htmlFor="image">Ramo:</label>
+                            <input className="form-control" id="ramo"
+                            />
+                        </div>
+                        <button type="submit"  className="btn btn-primary m-5">Registrar</button>
+                    </form>
+                    <Link to="/"><button type="button" className="btn btn-primary">Cancelar</button></Link>
+                    
+                </div>
+            </div>
+            )
+    }
+    
+    export default RegistrarEmpresa;
+
+    /*<div className="card container mt-5">
+                <div className="card-header">
+                    Registrar Empresa
                 </div>
                 <div className="card-body">
                      <form className="adicionar-form-container" onSubmit={handleSubmit} >
@@ -83,7 +129,4 @@ import { BASE_URL } from "../../Utils/requests";
                     <Link to="/destinos"><button type="button" className="btn btn-primary">Cancelar</button></Link>
                     
                 </div>
-            </div>)
-    }
-    
-    export default RegistrarEmpresa;
+            </div>*/

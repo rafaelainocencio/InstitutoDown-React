@@ -1,0 +1,20 @@
+.principal{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+
+footer{
+    height: 30px;
+    text-align: center;
+}
+
+.vaContainer, .liContainer{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.nomeVaga{
+    background-color: #d6dd90;
+}
